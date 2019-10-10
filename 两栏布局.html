@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+
+        body {
+
+            width: 300px;
+
+            position: relative; 
+           
+
+        }
+
+
+
+        .aside {
+
+            width: 100px;
+
+            height: 150px;
+
+            float: left;
+
+            background: #f66;
+
+        }
+
+
+
+        .main {
+
+            height: 200px;
+
+            background: #fcc;
+            overflow: hidden; /* 设为BFC */
+
+        }
+        /* 代码说明：bfc区域是一个独立的隔离容器，
+        使用overflow:hidden,可以将普通元素设为bfc元素，
+        并且成为一个独立容器，会显示出来一个两栏的布局，
+        并且无论最外边的盒子的宽度如何变化，只会显示在第二个盒子上，因而实现了两栏的自适应布局。 */
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="aside"></div>
+
+    <div class="main"></div>
+
+
+</body>
+
+</html>
